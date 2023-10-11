@@ -10,7 +10,7 @@ function eqArrays(arr1, arr2) { // function definition
       return false;
     }
   }
-    return true;
+  return true;
 }
 
 
