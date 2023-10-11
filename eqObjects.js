@@ -6,9 +6,9 @@ function eqArrays(arr1, arr2) {
   for (let i = 0; i < arr1.length; i++) {
       if (arr1[i] !== arr2[i]) {
           return false;
-      }
-  }
-  return true;
+}
+}
+    return true;
 }
 
 // Function to assert the equality of two values
@@ -44,10 +44,3 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-// Test cases
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
-
-const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
