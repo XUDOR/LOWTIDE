@@ -1,3 +1,11 @@
+const assertEqual = require('./assertEqual');
+const eqArrays = require('./eqArrays');
+
+
+
+
+
+
 // eqArrays function
 function eqArrays(arr1, arr2) {
   if (arr1.length !== arr2.length) {
@@ -53,11 +61,3 @@ const assertObjectsEqual = function(actual, expected) {
     console.log(`Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 };
-
-// Sample tests
-const obj1 = {a: 1, b: 2};
-const obj2 = {b: 2, a: 1};
-const obj3 = {a: 1, b: 3};
-
-assertObjectsEqual(obj1, obj2);  // Should print: Assertion Passed: { a: 1, b: 2 } === { b: 2, a: 1 }
-assertObjectsEqual(obj1, obj3);  // Should print: Assertion Failed: { a: 1, b: 2 } !== { a: 1, b: 3 }
