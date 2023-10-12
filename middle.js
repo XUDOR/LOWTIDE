@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-const eqArrays = require('./eqArrays');
 
 //middle
 const middle = function(array) { // function expression

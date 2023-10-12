@@ -1,6 +1,4 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = require('./assertEqual');
-
+//HEAD
 const head = arr => arr[0];
 
 //module export
