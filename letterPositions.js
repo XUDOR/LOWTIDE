@@ -13,7 +13,7 @@ const letterPositions = function(sentence) {
   }
   
   return results;
-}
+};
 
 //module export
 module.exports = letterPositions;

@@ -1,5 +1,5 @@
 // eqArrays function
-function eqArrays(arr1, arr2) { // function definition 
+const eqArrays = function(arr1, arr2) { // function definition
   if (arr1.length !== arr2.length) { // array comparison
     return false;
   }
@@ -9,7 +9,7 @@ function eqArrays(arr1, arr2) { // function definition
     }
   }
   return true;
-}
+};
 
 
 //module export

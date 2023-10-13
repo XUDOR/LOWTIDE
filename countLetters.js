@@ -1,5 +1,5 @@
 // function counts
-function countLetters(sentence) {
+const countLetters = function(sentence) {
   let counts = {};
   for (let char of sentence) {  // Looping through each character in the sentence
     char = char.toLowerCase();
@@ -9,7 +9,7 @@ function countLetters(sentence) {
     }
   }
   return counts;
-}
+};
 
 //module
 module.exports = countLetters;

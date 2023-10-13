@@ -1,5 +1,5 @@
 // Function to find the key by its value
-function findKeyByValue(object, value) {
+const findKeyByValue = function(object, value) {
   const keys = Object.keys(object);
 
   for (let key of keys) {
@@ -9,7 +9,7 @@ function findKeyByValue(object, value) {
   }
 
   return undefined;
-}
+};
 
 
 //module export
