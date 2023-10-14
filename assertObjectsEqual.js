@@ -1,4 +1,4 @@
-const eqObjects = require('./eqObject');
+const eqObjects = require('./eqObjects');
 
 // FUNCTION IMPLEMENTATION for assertObjectsEqual
 const assertObjectsEqual = function(actual, expected) {
