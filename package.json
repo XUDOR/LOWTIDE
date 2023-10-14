@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@roderickshoolbraid/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the Lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/XUDOR/LOWTIDE.git"
   },
-  "author": "",
+  "author": "Roderick Shoolbraid",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/XUDOR/LOWTIDE/issues"
