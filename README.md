@@ -26,6 +26,6 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `function1(...)`: description
+* `assertArraysEqual(example)`: compares two arrays if they are equal.
 * `function2(...)`: description
 * `function3(...)`: description
