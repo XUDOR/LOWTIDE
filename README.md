@@ -35,6 +35,11 @@ The following functions are currently implemented:
 
       `const results = _.tail([1, 2, 3]) // => [2, 3]`
 
+* `middle(arr)`: Returns an array consisting of the middle element of the even numbered array arr.
+              In the event that array.arris odd, it returns 2 elements.
+
+      `const results = _.middle([1, 2, 3, 5, 7, 11, 13 ]) // => [5]` 
+      `const results = _.middle([1, 2, 3, 5, 7, 11, ]) // => [3, 5]`
 
 
 
