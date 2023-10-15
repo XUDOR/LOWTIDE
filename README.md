@@ -28,12 +28,10 @@ The following functions are currently implemented:
 
 * `assertArraysEqual(example)`: compares two arrays if they are equal.
 
+* `head(arr)`: Returns an array consisting of the first element of the array arr.
 
+      `const results = _.middle([1, 2, 3, 5, 7, 11, 13 ]) // => [5]` 
 
-* `tail(arr)`: Returns an array consisting of all elements from index 1 onwards in the input array arr. 
-              It effectively excludes the first element from the array.
-
-      `const results = _.tail([1, 2, 3]) // => [2, 3]`
 
 * `middle(arr)`: Returns an array consisting of the middle element of the even numbered array arr.
               In the event that array.arris odd, it returns 2 elements.
@@ -42,6 +40,10 @@ The following functions are currently implemented:
       `const results = _.middle([1, 2, 3, 5, 7, 11, ]) // => [3, 5]`
 
 
+* `tail(arr)`: Returns an array consisting of all elements from index 1 onwards in the input array arr. 
+              It effectively excludes the first element from the array.
+
+      `const results = _.tail([1, 2, 3]) // => [2, 3]`
 
 
 * `function3(...)`: description
