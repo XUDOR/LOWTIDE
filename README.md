@@ -100,6 +100,39 @@ _________________________________________________________________________
       // Should return 'noma'
 
 _________________________________________________________________________
+* `findKeyByValue(object, value)`:
+  - `object`: The object to search within.
+  - `value`: The value to search for within the object.
+  - Returns the first key in the provided object whose corresponding value matches the given `value`. If no key is found, it returns `undefined`.
+
+  Example usage:
+
+  
+  const bestTVShowsByGenre = {
+    sciFi: "The Expanse",
+    comedy: "Brooklyn Nine-Nine",
+    drama: "Breaking Bad",
+  };
+
+  const result1 = _.findKeyByValue(bestTVShowsByGenre, "Breaking Bad");
+  // Should return "drama"
+
+  const result2 = _.findKeyByValue(bestTVShowsByGenre, "The Expanse");
+  // Should return "sciFi"
+
+  const result3 = _.findKeyByValue(bestTVShowsByGenre, "Friends");
+  // Should return undefined
+
+_________________________________________________________________________
+* `flatten(arr)`:
+  - `arr`: An array that may contain nested arrays.
+  - Returns a new array with all the elements from the input array `arr`, but flattened, meaning that any nested arrays are recursively expanded so that the resulting array contains only non-array elements.
+
+      const nestedArray = [1, [2, 3], [4, [5, 6]]];
+      const flattenedArray = _.flatten(nestedArray);
+      console.log(flattenedArray); // Should return [1, 2, 3, 4, 5, 6]
+
+_________________________________________________________________________
 * `head(arr)`: 
       head(arr): Returns the first element of the array.
 
