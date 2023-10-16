@@ -27,6 +27,7 @@ This project was created and published by me as part of my learnings at Lighthou
 The following functions are currently implemented:
 
 * `assertArraysEqual(arr1, arr2)`: 
+
       Compares two arrays for equality and logs an appropriate message to the console.
 
       const result1 = _.assertArraysEqual([1, 2, 3], [1, 2, 3]); // Logs: Assertion Passed: 1,2,3 === 1,2,3
@@ -34,6 +35,7 @@ The following functions are currently implemented:
       
 _________________________________________________________________________
 * `assertEqual(actual, expected)`:
+
       Compares two primitive values for strict equality and logs an appropriate message to the console.
 
       const result1 = _.assertEqual("Lighthouse", "Lighthouse"); // Logs: Assertion Passed: Lighthouse === Lighthouse
@@ -41,6 +43,7 @@ _________________________________________________________________________
 
 _________________________________________________________________________
 * `assertObjectsEqual(actual, expected)`:
+
        Checks if two objects are deeply equal and logs an appropriate message to the console.
 
       const result = _.assertObjectsEqual(obj1, obj2);  // // Logs: Assertion Passed: { a: 1, b: 2 } === { b: 2, a: 1 }
@@ -48,6 +51,7 @@ _________________________________________________________________________
 
 _________________________________________________________________________
 * `countLetters(sentence)`:
+
       Counts the number of occurrences for each letter in the given sentence and returns an object representation.
 
       const result = _.countLetters("Lighthouse Labs");
@@ -55,6 +59,7 @@ _________________________________________________________________________
 
 _________________________________________________________________________
 * `countOnly(allItems, itemsToCount)`:
+
       Counts the occurrences of specific items in an array (`allItems`) based on the criteria specified in the `itemsToCount` object and returns an object representation.
 
       const result1 = _.countOnly(["a", "b", "a", "c", "b", "a"], { a: true, b: false, c: true });
@@ -65,6 +70,7 @@ _________________________________________________________________________
 
 _________________________________________________________________________ 
 * `eqArrays(arr1, arr2)`: 
+
       eqArrays(arr1, arr2): Compares two arrays for strict equality and returns true or false.
 
       const result1 = _.eqArrays([1, 2, 3], [1, 2, 3]); //  returns true
@@ -74,6 +80,7 @@ _________________________________________________________________________
 
 _________________________________________________________________________
 * `eqObjects(obj1, obj2)`:
+
       Compares two objects for equality, including nested arrays and objects, and returns `true` if they are equal, and `false` otherwise.
 
       const obj1 = { a: 1, b: 2, c: [1, 2, 3] };
@@ -85,6 +92,7 @@ _________________________________________________________________________
 
 _________________________________________________________________________
 * `findKey(object, callback)`
+
       Finds the first key in the provided object where the callback function returns a truthy value and returns that key. If no key is found, it returns `undefined`.
 
       const data = {
@@ -101,6 +109,7 @@ _________________________________________________________________________
 
 _________________________________________________________________________
 * `findKeyByValue(object, value)`:
+
       `object`: The object to search within.
       `value`: The value to search for within the object.
       Returns the first key in the provided object whose corresponding value matches the given `value`. If no key is found, it returns `undefined`.
@@ -118,6 +127,7 @@ _________________________________________________________________________
 
 _________________________________________________________________________
 * `flatten(arr)`:
+
       `arr`: An array that may contain nested arrays.
       Returns a new array with all the elements from the input array `arr`, but flattened, meaning that any nested arrays are recursively expanded so that the resulting array contains only non-array elements.
 
@@ -127,12 +137,14 @@ _________________________________________________________________________
 
 _________________________________________________________________________
 * `head(arr)`: 
+
       head(arr): Returns the first element of the array.
 
       const result = _.head([1, 2, 3]); //  returns 1
 
 _________________________________________________________________________
 * `middle(arr)`: 
+
       middle(arr): Returns the middle element(s) of the array.
 
       const result1 = _.middle([1, 2, 3, 5, 7, 11, 13 ]) //  returns [5]
@@ -140,6 +152,7 @@ _________________________________________________________________________
 
 _________________________________________________________________________
 * `tail(arr)`: 
+
       tail(arr): Returns all elements of the array excluding the first one.
 
       const result = _.tail([1, 2, 3]) // returns [2, 3]
