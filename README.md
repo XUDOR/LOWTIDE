@@ -104,24 +104,21 @@ _________________________________________________________________________
   - `object`: The object to search within.
   - `value`: The value to search for within the object.
   - Returns the first key in the provided object whose corresponding value matches the given `value`. If no key is found, it returns `undefined`.
-
-  Example usage:
-
   
-  const bestTVShowsByGenre = {
-    sciFi: "The Expanse",
-    comedy: "Brooklyn Nine-Nine",
-    drama: "Breaking Bad",
-  };
+      const bestTVShowsByGenre = {
+            sciFi: "The Expanse",
+            comedy: "Brooklyn Nine-Nine",
+            drama: "Breaking Bad",
+      };
 
-  const result1 = _.findKeyByValue(bestTVShowsByGenre, "Breaking Bad");
-  // Should return "drama"
+      const result1 = _.findKeyByValue(bestTVShowsByGenre, "Breaking Bad");
+      // Should return "drama"
 
-  const result2 = _.findKeyByValue(bestTVShowsByGenre, "The Expanse");
-  // Should return "sciFi"
+      const result2 = _.findKeyByValue(bestTVShowsByGenre, "The Expanse");
+      // Should return "sciFi"
 
-  const result3 = _.findKeyByValue(bestTVShowsByGenre, "Friends");
-  // Should return undefined
+      const result3 = _.findKeyByValue(bestTVShowsByGenre, "Friends");
+      // Should return undefined
 
 _________________________________________________________________________
 * `flatten(arr)`:
