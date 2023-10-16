@@ -61,18 +61,12 @@ _________________________________________________________________________
       - `itemsToCount`: An object specifying which items to count and their criteria. Only items with a truthy value in this object will be counted.
 
       `const result1 = _.countOnly(["a", "b", "a", "c", "b", "a"], { a: true, b: false, c: true });`
-      // returns { a: 3, c: 1 }
+      `// returns { a: 3, c: 1 }`
       
       `const result2 = _.countOnly(["apple", "banana", "apple", "cherry", "banana", "apple"], { apple: true, banana: false, cherry: true });`
-      // returns { apple: 3, cherry: 1 }
+      `// returns { apple: 3, cherry: 1 }`
+
 _________________________________________________________________________ 
-
-
-
-
-
-
-_________________________________________________________________________
 * `eqArrays(arr1, arr2)`: 
       eqArrays(arr1, arr2): Compares two arrays for strict equality and returns true or false.
 
@@ -80,6 +74,20 @@ _________________________________________________________________________
       `const result2 = _.eqArrays([1, 2, 3], [3, 2, 1]); //  returns false`
       `const result3 = _.eqArrays(["1", "2", "3"], ["1", "2", "3"]); //  returns true`
       `const result4 = _.eqArrays(["1", "2", "3"], ["1", "2", 3]);   //  returns false`
+
+_________________________________________________________________________
+* `eqObjects(obj1, obj2)`:
+      eqObjects(obj1, obj2): Compares two objects for equality, including nested arrays and objects, and returns `true` if they are equal, and `false` otherwise.
+
+      - `obj1`: The first object to be compared.
+      - `obj2`: The second object to be compared.
+
+      const obj1 = { a: 1, b: 2, c: [1, 2, 3] };
+      const obj2 = { b: 2, a: 1, c: [1, 2, 3] };
+      const obj3 = { a: 1, b: 2, c: [1, 2, 4] };
+
+      `console.log(_.eqObjects(obj1, obj2)); // Should return true`
+      `console.log(_.eqObjects(obj1, obj3)); // Should return false`
 
 _________________________________________________________________________
 * `head(arr)`: 
