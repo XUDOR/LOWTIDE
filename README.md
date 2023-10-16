@@ -27,38 +27,35 @@ This project was created and published by me as part of my learnings at Lighthou
 The following functions are currently implemented:
 
 * `assertArraysEqual(arr1, arr2)`: 
-      assertArraysEqual(arr1, arr2): Compares two arrays for equality and logs an appropriate message to the console.
+      Compares two arrays for equality and logs an appropriate message to the console.
 
       `const result1 = _.assertArraysEqual([1, 2, 3], [1, 2, 3]); // Logs: Assertion Passed: 1,2,3 === 1,2,3`
       `const result2 = _.assertArraysEqual([1, 2, 3], [1, 2, 4]); // Logs: Assertion Failed: 1,2,3 !== 1,2,4`
       
 _________________________________________________________________________
 * `assertEqual(actual, expected)`:
-      assertEqual(actual, expected): Compares two primitive values for strict equality and logs an appropriate message to the console.
+      Compares two primitive values for strict equality and logs an appropriate message to the console.
 
       `const result1 = _.assertEqual("Lighthouse", "Lighthouse"); // Logs: Assertion Passed: Lighthouse === Lighthouse`
       `const result2 = _.assertEqual("Lighthouse Labs", "Bootcamp"); // Logs: Assertion Failed: Lighthouse Labs !== Bootcamp`
 
 _________________________________________________________________________
 * `assertObjectsEqual(actual, expected)`:
-      assertObjectsEqual(actual, expected): Checks if two objects are deeply equal and logs an appropriate message to the console.
+       Checks if two objects are deeply equal and logs an appropriate message to the console.
 
       `const result = _.assertObjectsEqual(obj1, obj2);  // // Logs: Assertion Passed: { a: 1, b: 2 } === { b: 2, a: 1 }`
       `const result2 = _.assertObjectsEqual(obj1, obj3);  // // Logs: Assertion Failed: { a: 1, b: 2 } !== { a: 1, b: 3 }`
 
 _________________________________________________________________________
 * `countLetters(sentence)`:
-      countLetters(sentence): Counts the number of occurrences for each letter in the given sentence and returns an object representation.
+      Counts the number of occurrences for each letter in the given sentence and returns an object representation.
 
       `const result = _.countLetters("Lighthouse Labs");` 
       `// Should return { l: 2, i: 1, g: 1, h: 2, t: 1, o: 1, u: 1, s: 2, e: 1, a: 1, b: 1 }`
 
 _________________________________________________________________________
 * `countOnly(allItems, itemsToCount)`:
-      countOnly(allItems, itemsToCount): Counts the occurrences of specific items in an array (`allItems`) based on the criteria specified in the `itemsToCount` object and returns an object representation.
-
-      - `allItems`: An array of items to be counted.
-      - `itemsToCount`: An object specifying which items to count and their criteria. Only items with a truthy value in this object will be counted.
+      Counts the occurrences of specific items in an array (`allItems`) based on the criteria specified in the `itemsToCount` object and returns an object representation.
 
       `const result1 = _.countOnly(["a", "b", "a", "c", "b", "a"], { a: true, b: false, c: true });`
       `// returns { a: 3, c: 1 }`
@@ -77,19 +74,28 @@ _________________________________________________________________________
 
 _________________________________________________________________________
 * `eqObjects(obj1, obj2)`:
-      eqObjects(obj1, obj2): Compares two objects for equality, including nested arrays and objects, and returns `true` if they are equal, and `false` otherwise.
+      Compares two objects for equality, including nested arrays and objects, and returns `true` if they are equal, and `false` otherwise.
 
-      - `obj1`: The first object to be compared.
-      - `obj2`: The second object to be compared.
-
-      const obj1 = { a: 1, b: 2, c: [1, 2, 3] };
-      const obj2 = { b: 2, a: 1, c: [1, 2, 3] };
-      const obj3 = { a: 1, b: 2, c: [1, 2, 4] };
+      `const obj1 = { a: 1, b: 2, c: [1, 2, 3] };`
+      `const obj2 = { b: 2, a: 1, c: [1, 2, 3] };`
+      `const obj3 = { a: 1, b: 2, c: [1, 2, 4] };`
 
       `console.log(_.eqObjects(obj1, obj2)); // Should return true`
       `console.log(_.eqObjects(obj1, obj3)); // Should return false`
 
 _________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
 * `head(arr)`: 
       head(arr): Returns the first element of the array.
 
