@@ -47,6 +47,32 @@ _________________________________________________________________________
       `const result2 = _.assertObjectsEqual(obj1, obj3);  // // Logs: Assertion Failed: { a: 1, b: 2 } !== { a: 1, b: 3 }`
 
 _________________________________________________________________________
+* `countLetters(sentence)`:
+      countLetters(sentence): Counts the number of occurrences for each letter in the given sentence and returns an object representation.
+
+      `const result = _.countLetters("Lighthouse Labs");` 
+      `// Should return { l: 2, i: 1, g: 1, h: 2, t: 1, o: 1, u: 1, s: 2, e: 1, a: 1, b: 1 }`
+
+_________________________________________________________________________
+* `countOnly(allItems, itemsToCount)`:
+      countOnly(allItems, itemsToCount): Counts the occurrences of specific items in an array (`allItems`) based on the criteria specified in the `itemsToCount` object and returns an object representation.
+
+      - `allItems`: An array of items to be counted.
+      - `itemsToCount`: An object specifying which items to count and their criteria. Only items with a truthy value in this object will be counted.
+
+      `const result1 = _.countOnly(["a", "b", "a", "c", "b", "a"], { a: true, b: false, c: true });`
+      // returns { a: 3, c: 1 }
+      
+      `const result2 = _.countOnly(["apple", "banana", "apple", "cherry", "banana", "apple"], { apple: true, banana: false, cherry: true });`
+      // returns { apple: 3, cherry: 1 }
+_________________________________________________________________________ 
+
+
+
+
+
+
+_________________________________________________________________________
 * `eqArrays(arr1, arr2)`: 
       eqArrays(arr1, arr2): Compares two arrays for strict equality and returns true or false.
 
