@@ -32,14 +32,14 @@ The following functions are currently implemented:
 
       `const result1 = _.assertArraysEqual([1, 2, 3], [1, 2, 3]); // Logs: Assertion Passed: 1,2,3 === 1,2,3`
       `const result2 = _.assertArraysEqual([1, 2, 3], [1, 2, 4]); // Logs: Assertion Failed: 1,2,3 !== 1,2,4`
-[new line]
+[newline]
 * `assertEqual(actual, expected)`:
             Compares two primitive values (like strings or numbers) for strict equality and logs a message to the console.
             If the values are equal, it logs "Assertion Passed: actual === expected"; if they are not equal, it logs "Assertion Failed: actual !== expected".
 
       `const result1 = _.assertEqual("Lighthouse", "Lighthouse"); // Logs: Assertion Passed: Lighthouse === Lighthouse`
       `const result2 = _.assertEqual("Lighthouse Labs", "Bootcamp"); // Logs: Assertion Failed: Lighthouse Labs !== Bootcamp`
-[new line]
+[newline]
 * `eqArrays(arr1, arr2)`: 
             Compares two arrays for strict equality – both in terms of the order and type of elements. Returns `true` if the arrays are identical, and `false` otherwise.
 
@@ -47,19 +47,19 @@ The following functions are currently implemented:
       `const result2 = _.eqArrays([1, 2, 3], [3, 2, 1]); // Should return false`
       `const result3 = _.eqArrays(["1", "2", "3"], ["1", "2", "3"]); // Should return true`
       `const result4 = _.eqArrays(["1", "2", "3"], ["1", "2", 3]);   // Should return false`
-[new line]
+[newline]
 * `head(arr)`: 
             Returns the first element of the array arr.
 
       `const result = _.head([1, 2, 3]); // Should return 1`
-[new line]
+[newline]
 * `middle(arr)`: 
             Returns an array consisting of the middle element of the odd numbered array arr.
             In the event that the array length is even, it returns 2 elements.
 
       `const result1 = _.middle([1, 2, 3, 5, 7, 11, 13 ]) // Should return [5]` 
       `const result2 = _.middle([1, 2, 3, 5, 7, 11, ]) // Should return [3, 5]`
-[new line]
+[newline]
 * `tail(arr)`: 
             Returns an array consisting of all elements from index 1 onwards in the input array arr. 
             It effectively excludes the first element from the array.
