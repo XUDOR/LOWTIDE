@@ -84,18 +84,22 @@ _________________________________________________________________________
       `console.log(_.eqObjects(obj1, obj3)); // Should return false`
 
 _________________________________________________________________________
+* `findKey(object, callback)`
+      Finds the first key in the provided object where the callback function returns a truthy value and returns that key. If no key is found, it returns `undefined`.
+      
+      `const data = {'
+             `"Blue Hill": { stars: 1 },`
+            `"Akaleri":   { stars: 3 },`
+            `"noma":      { stars: 2 },`
+            `"elBulli":   { stars: 3 },`
+            `"Ora":       { stars: 2 },`
+            `"Akelarre":  { stars: 3 }`
+            `};`
 
+      const result = _.findKey(data, restaurant => restaurant.stars === 2);
+      // Should return 'noma'
 
-
-
-
-
-
-
-
-
-
-
+_________________________________________________________________________
 * `head(arr)`: 
       head(arr): Returns the first element of the array.
 
