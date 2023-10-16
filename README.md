@@ -192,4 +192,9 @@ The `takeUntil` function returns a slice of the `array` with elements taken from
       console.log(result); // Should return [1, 2, 3]
 
 _________________________________________________________________________
-* `without( etc )`:
+* `takeUntil(array, callback)`
+
+      const numbers = [1, 2, 3, 4, 5];
+      
+      const result = _.takeUntil(numbers, (num) => num > 3); // Take elements from the beginning until a number greater than 3 is found.
+      console.log(result); // Should return [1, 2, 3]
