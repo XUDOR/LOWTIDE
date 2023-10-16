@@ -28,7 +28,7 @@ The following functions are currently implemented:
 
 * `assertArraysEqual(arr1, arr2)`: 
 
-Compares two arrays for equality and logs an appropriate message to the console.
+      Compares two arrays for equality and logs an appropriate message to the console.
 
       const result1 = _.assertArraysEqual([1, 2, 3], [1, 2, 3]); 
       // Logs: Assertion Passed: 1,2,3 === 1,2,3
@@ -71,7 +71,9 @@ Counts the occurrences of specific items in an array (`allItems`)
 based on the criteria specified in the `itemsToCount` object and returns an object
 representation.
 
-      const result1 = _.countOnly(["a", "b", "a", "c", "b", "a"], { a: true, b: false, c: true });
+      const result1 = _.countOnly(
+            ["a", "b", "a", "c", "b", "a"], 
+            { a: true, b: false, c: true });
       // returns { a: 3, c: 1 }
       
       const result2 = _.countOnly(
@@ -229,4 +231,5 @@ array and includes only the elements that are not found in the `itemsToRemove`
 array. The result is a new array containing the remaining elements.
 
 
-      const result = _.without([1, 2, 3, 4, 5], [2, 4]); // Should return [1, 3, 5]
+      const result = _.without([1, 2, 3, 4, 5], [2, 4]); 
+      // Should return [1, 3, 5]
