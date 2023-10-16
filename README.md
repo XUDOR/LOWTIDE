@@ -111,14 +111,10 @@ _________________________________________________________________________
             drama: "Breaking Bad",
       };
 
-      const result1 = _.findKeyByValue(bestTVShowsByGenre, "Breaking Bad");
-      // Should return "drama"
+      const result1 = _.findKeyByValue(bestTVShowsByGenre, "Breaking Bad"); // Should return "drama"
+      const result2 = _.findKeyByValue(bestTVShowsByGenre, "The Expanse"); // Should return "sciFi"
+      const result3 = _.findKeyByValue(bestTVShowsByGenre, "Friends"); // Should return undefined
 
-      const result2 = _.findKeyByValue(bestTVShowsByGenre, "The Expanse");
-      // Should return "sciFi"
-
-      const result3 = _.findKeyByValue(bestTVShowsByGenre, "Friends");
-      // Should return undefined
 
 _________________________________________________________________________
 * `flatten(arr)`:
