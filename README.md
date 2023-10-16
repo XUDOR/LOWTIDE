@@ -141,6 +141,29 @@ _________________________________________________________________________
       head(arr): Returns the first element of the array.
 
       const result = _.head([1, 2, 3]); //  returns 1
+_________________________________________________________________________
+* `letterPositions(sentence)`: 
+
+      letterPositions(sentence): Returns an object that maps each unique character in the given `sentence` to an array of the indices at which it appears.
+
+      const result = _.letterPositions("hello"); // Should return { h: [0], e: [1], l: [2, 3], o: [4] }
+
+      The `letterPositions` function is useful for analyzing the positions of characters within a string. It returns an object where the keys are unique characters in the `sentence`, and the values are arrays of indices where those characters can be found. In the example provided, the letter "h" appears at index 0, "e" at index 1, "l" at indices 2 and 3, and "o" at index 4 in the input string "hello."
+
+_________________________________________________________________________
+* `map(array, callback)`
+
+      The `map` function applies a provided `callback` function to each element of the `array` and returns a new array containing the results of applying the callback.
+
+      const numbers = [1, 2, 3, 4, 5];
+
+      // Double each number in the array
+      const doubledNumbers = _.map(numbers, (num) => num * 2);
+      console.log(doubledNumbers); // Should return [2, 4, 6, 8, 10]
+
+      // Square each number in the array
+      const squaredNumbers = _.map(numbers, (num) => num * num);
+      console.log(squaredNumbers); // Should return [1, 4, 9, 16, 25]
 
 _________________________________________________________________________
 * `middle(arr)`: 
@@ -158,3 +181,11 @@ _________________________________________________________________________
       const result = _.tail([1, 2, 3]) // returns [2, 3]
 
 
+_________________________________________________________________________
+* `takeUntil( etc)`: 
+
+
+
+
+_________________________________________________________________________
+* `without( etc )`:
